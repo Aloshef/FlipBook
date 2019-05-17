@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Работа для HACATHON2019</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="less/style.css">
+</head>
+<body>
+
+    <div class="cover">
+        <div class="page page-1">
+            <figure class="front front-1">мат</figure>
+            <figure class="back back-1">
+                метла
+            </figure>
+        </div>
+        <div class="page page-2">
+            <figure class="front front-2">сова</figure>
+            <figure class="back back-2">среда</figure>
+        </div>
+        <div class="page page-3">
+            <figure class="front front-3">сноб</figure>
+            <figure class="back back-3">сеновал</figure>
+        </div>
+        <div class="page page-4">
+            <figure class="front front-4">след</figure>
+            <figure class="back back-4">срок</figure>
+        </div>
+        <div class="page page-5">
+            <figure class="front front-5">смог</figure>
+            <figure class="back back-5">лимон</figure>
+        </div>
+        <div class="page page-6">
+            <figure class="front front-6">бал</figure>
+            <figure class="back back-6">лак</figure>
+        </div>
+        <div class="page page-7">
+            <figure class="front front-7">
+                
+                тяф
+                
+            </figure>
+            <figure class="back back-7">
+                
+                    ням
+                
+            </figure>
+        </div>
+        <div class="page page-8">
+            <figure class="front front-8">
+                
+                    мня
+                
+            </figure>
+            <figure class="back back-8">
+            Класс
+            </figure>
+        </div>
+        <div class="page page-9">
+            <figure class="front front-9">
+                
+                    мне
+                
+            </figure>
+            <figure class="back back-9">
+                Вдруг
+            </figure>
+        </div>
+    </div>
+    
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+        $(function(){
+            $('.cover').click(function(){
+                $('.cover').addClass("cover-left"); 
+            });
+            $('.page').click(function(){
+               $(this).toggleClass('page-open');
+            });
+            
+        });
+    </script>
+</body>
+</html>

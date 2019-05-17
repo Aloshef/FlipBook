@@ -1,0 +1,89 @@
+* { padding: 0; margin: 0; }
+html, body {
+  width: 100%;
+  height: 100%;
+
+}
+
+.cover {
+  width: 510px;
+  height: 640px;
+  position: relative;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  perspective: 1000px;
+  transition: all .5s ease-in;
+}
+
+.title-page {
+  width: 500px;
+  height: 100%;
+  position: absolute;
+  left: 20px;
+  background-color: #cc0000;
+  transform-style: preserve-3d;
+  transform-origin: left;
+  transition: all .5s ease-in;
+}
+
+.page {
+    width: 490px;
+  height: 100%;
+  position: absolute;
+  left: 20px;
+  background-color: #cc0000;
+  transform-style: preserve-3d;
+  transform-origin: left;
+  transition: all .5s ease-in;
+}
+
+.page-open {
+    visibility: visible;
+    transition: all .5s ease-in;	
+}
+
+.page-close{
+    visibility: hidden;
+}
+
+.cover-left{
+    left:60%;
+}
+
+.cover-right {
+	right: 60%;
+}
+
+.cover>.page-open {
+	transform: rotateY(-180deg);
+}
+
+figure {
+    margin: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+figure .front {
+    background-color: green;
+}
+
+figure .back {
+    background-color: wheat;
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
